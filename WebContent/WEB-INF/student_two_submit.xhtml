@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+  <title> Information Page </title>
+</h:head>
+
+<h:body>
+<h:form>
+<h:inputText id= firstname value="#{Student_two_bean.firstname}"/>
+<br/><br/>
+<h:inputText id=lastmane value="#{Student_two_bean.lastname}"/>
+
+<br/><br/>
+
+Favorite programming language :
+<h:selectOneRadio value="#{Student_two_bean.favlanguage}">
+<f:selectItem itemValue="Java" itemLabel="Java"/>
+<f:selectItem itemValue="C#" itemLabel="C#"/>
+<f:selectItem itemValue="PHP" itemLabel="PHP"/>
+<f:selectItem itemValue="Python" itemLabel="Python"/>
+
+</h:selectOneRadio>
+<br/><br/>
+
+<h:commandButton value="submit" action="student_two_response"/>
+
+
+</h:form>
+
+</h:body>
+
+</html>
+
